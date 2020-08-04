@@ -10,11 +10,11 @@ class TodoService extends Service {
         return result;
     }
     async update(_id) {
-        const result = await this.ctx.model.Todo.update({ _id }, { completed: true });
+        const result = await this.ctx.model.Todo.updateOne({ _id }, { completed: true });
         return result;
     }
     async destroy(_id) {
-        const result = await this.ctx.model.Todo.remove({ _id });
+        const result = await this.ctx.model.Todo.deleteOne({ _id });
         return result;
     }
 }
