@@ -1,0 +1,31 @@
+#app {
+    width: 500px;
+    min-height: 100%;
+    margin: auto;
+}
+.page-title {
+    text-align: center;
+}
+.todo-item {
+    width: 100%;
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #efefef;
+}
+.todo-item:last-child {
+    border-bottom: none;
+}
+.todo-item-title {
+    width: 300px;
+}
+.todo-item-status {
+    width: 60px;
+}
+.todo-item-update {
+    flex: 1;
+    text-align: center;
+}
+.empty {
+    color: #ccc;
+}
